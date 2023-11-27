@@ -237,24 +237,32 @@
         <p>Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</p>
     </div>
     
-    <form action="">
+    <form action="inscribir.php" method="get">
         
       <div class="row mb-3">
           
         <div class="col">
-        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="nombre">
         </div>
         
         <div class="col">
-        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" name="apellido">
         </div>
         
       </div>
-        
+      
+      <div class="row mb-3">
+          
+        <div class="col">
+        <input type="email" class="form-control" placeholder="email@email.com" aria-label="email" name="email">
+        </div>
+   
+      </div>
+      
       <div class="row mb-3">
         
         <div class="col">
-        <textarea class="form-control" placeholder="Sobre qué quieres hablar?" aria-label="Sobre qué quieres hablar?" cols="30" rows="10"></textarea>
+        <textarea class="form-control" placeholder="Sobre qué quieres hablar?" aria-label="Sobre qué quieres hablar?" cols="30" rows="10" name="comentarios"></textarea>
         <span>Recuerda incluir un título para tu charla.</span>
         </div>
         
