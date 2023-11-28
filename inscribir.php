@@ -22,7 +22,31 @@ echo "<br>";
 echo "<pre>";
 echo var_dump($_GET);
 echo "</pre>";
+
+if (isset($nombreUsuario) && $nombreUsuario=="") {?>
+  <div class="alert alert-warning" role="alert">
+  Omitió escribir su Nombre!
+</div><?php 
+  echo "Omitió escribir su Nombre";
+} else {
+  echo "Bienvenido ". $nombreUsuario;
+}
+
+echo "<br>";
+echo "<br>";
+
+if (isset($apellidoUsuario) && $apellidoUsuario=="") {?>
+  <div class="alert alert-warning" role="alert">
+  Omitió escribir su Apellido!
+</div><?php 
+  echo "Omitió escribir su Apellido";
+} else {
+  echo "Bienvenido ". $nombreUsuario;
+}
+echo "<br>";
+echo "<br>";
 ?>
+
 <!doctype html>
 <html lang="es">
   <head>
